@@ -22,7 +22,7 @@ public class MySQL {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-        if (0 >= 1) {
+        if (x >= 1) {
             return true;
         }
         return false;
