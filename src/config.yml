@@ -1,7 +1,9 @@
-Debug: true
+DatabaseType: mysql
 MySQL:
   Host: localhost
   Username: root
   Password: password
   Port: 3306
   Database: statz
+SQLite: 'sqlite:/var/minecraft/plugins/Statz/'
+Debug: true
