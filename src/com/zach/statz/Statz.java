@@ -30,7 +30,8 @@ public class Statz extends JavaPlugin implements Listener{
 	public void onEnable() {
 		saveDefaultConfig();
 
-                Log.setLogger(this.getLogger());
+		Log.setLogger(this.getLogger());
+		Log.setDebugging(true);
 		getServer().getPluginManager().registerEvents(new EventListener(), this);
 
 		this.debug = getConfig().getBoolean("Debug");
@@ -46,6 +47,7 @@ public class Statz extends JavaPlugin implements Listener{
 		this.debug("&aport = &e" + port);
 		this.debug("&adatabase = &e" + database);
 
+		Log.setDebugging(this.debug);
 		Statz.plugin = this;
 	}
 
