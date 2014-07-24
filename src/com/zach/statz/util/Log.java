@@ -1,11 +1,15 @@
 package com.zach.statz.util;
 
+import java.util.logging.Logger;
+import org.bukkit.Bukkit;
+
 public class Log {
 
-	private static final String COLOR_MC_CHAR = Character.toString((char) 167);
+	private static final char COLOR_MC_CHAR = (char) 167;
+        private static Logger logger;
 
 	public static void info(String msg){
-			System.out.println(colorChat(msg));
+			logger.info(colorChat(msg));
 	}
 	public static void config(String msg){
 			info(msg);
@@ -18,10 +22,14 @@ public class Log {
 	}
 
     public static String colorChat(String msg) {
-        return msg.replaceAll("&", COLOR_MC_CHAR);
+        return msg.replace('&', (char) 167);
     }
 	public static void debug(String string) {
 		System.out.println(string);
 	}
+
+    public static void setLogger(Logger logger) {
+        Log.logger = logger;
+    }
 
 }

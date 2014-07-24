@@ -30,6 +30,7 @@ public class Statz extends JavaPlugin implements Listener{
 	public void onEnable() {
 		saveDefaultConfig();
 
+                Log.setLogger(this.getLogger());
 		getServer().getPluginManager().registerEvents(new EventListener(), this);
 
 		this.debug = getConfig().getBoolean("Debug");
