@@ -1,3 +1,7 @@
-IP:
-username:
-database:
+Debug: true
+MySQL:
+  Host: localhost
+  Username: root
+  Password: password
+  Port: 3306
+  Database: statz
