@@ -39,11 +39,11 @@ public class Statz extends JavaPlugin implements Listener{
                 this.port = getConfig().getString("MySQL.Port");
                 this.database = getConfig().getString("MySQL.Database");
                 
-                this.debug("Host = " + host);
-                this.debug("username = " + username);
-                this.debug("password = " + password);
-                this.debug("port = " + port);
-                this.debug("database = " + database);
+                this.debug("&aHost = &e" + host);
+                this.debug("&ausername = &e" + username);
+                this.debug("&apassword = &e" + password);
+                this.debug("&aport = &e" + port);
+                this.debug("&adatabase = &e" + database);
 		
                 Statz.plugin = this;
 	}
